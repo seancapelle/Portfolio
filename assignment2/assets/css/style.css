@@ -10,7 +10,7 @@ header {
 	color: white;
 }
 .title {
-	text-align: center;
+	/*text-align: center;*/
 	text-shadow: 3px 3px 0 black;
 }
 ul {
@@ -46,6 +46,7 @@ footer {
 }
 .left {
 	background-color: rgb(100,255,100);
+
 }
 .right {
 	/*background-color: green;*/
@@ -65,7 +66,7 @@ footer {
 	margin: 10px;
 	box-shadow: 5px 5px 0px black;
 }
-.thumbnail {
+.pic {
 	float: left;
 	width: 200px;
 	height: 150px;
@@ -84,4 +85,29 @@ footer {
 	color: white;
 	/*text-decoration: none;*/
 }
-/*@media query at bottom*/
+@media only screen and (max-width: 980px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: static;
+		height: 60px;
+		width: 100%;
+		background-image: none;
+
+		background-color: rgb(100,200,255);
+	}
+	.left {
+		width: 100%;
+	}
+	.h2 {
+		font-family: 'Press Start 2P', cursive;
+		margin: 0;
+		font-size: 1em;
+	}
+}
