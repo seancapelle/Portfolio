@@ -52,12 +52,12 @@ li a{
 li {
 	display: inline;
 }
-li a:hover {
+/*li a:hover {
 	position: relative;
   	top: -2px;
  	left: -2px;
  	text-decoration: none;
-}
+}*/
 /*Styling for left section*/
 .left {
 	background-color: #fff;
@@ -85,12 +85,12 @@ li a:hover {
 	width: 150px;
 	height: auto;
 }
-.left img:hover {
+/*.left img:hover {
   box-shadow: 5px 5px 5px #666;
   position: relative;
   top: -2px;
   left: -2px;
-}
+}*/
 /*Styling for right section*/
 .right {
 	background-color: #fff;
@@ -117,12 +117,12 @@ li a:hover {
 	width: 50px;
 	height: auto;
 }
-.right img:hover {
+/*.right img:hover {
 	position: relative;
   	top: -2px;
  	left: -2px;
  	box-shadow: 5px 5px 5px #666;
-}
+}*/
 /*Styling for footer*/
 footer {
 	background-color: #666;
@@ -181,12 +181,13 @@ input[type=submit] {
 	color: #fff;
 	border: none;
 	border-radius: 10px;
+	box-shadow: 5px 5px 5px #666;
 }
 input[type=submit]:hover {
-	 box-shadow: 5px 5px 5px #666;
+  box-shadow: none;
   position: relative;
-  top: -2px;
-  left: -2px;	
+  top: 2px;
+  left: 2px;	
 }
 /*Styling for Portfolio page*/
 .portfolioBody {

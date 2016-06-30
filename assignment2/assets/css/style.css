@@ -4,22 +4,11 @@ h1, h2, h3, span {
 }
 header {
 	background-image: url(../images/grass.png);
-	/*background-color: rgb(100,200,255);*/
 	color: white;
 }
 .title {
 	font-family: 'Press Start 2P', cursive;
 	text-shadow: 3px 3px 0 black;
-}
-/*.title h1 {
-	float: left;
-}
-.title h3 {
-	float: left;
-}*/
-.logo {
-	float: left;
-	text-align: center;
 }
 ul {
 	list-style-image: url(../images/heart-small.png);
@@ -39,6 +28,7 @@ body {
 p {
 	margin-bottom: 12px;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	color: black;
 }
 a {
 	text-decoration: none;
@@ -51,19 +41,6 @@ a:hover {
 header {
 	background-color: #fff;
 }
-/*header h1 {
-	float: left;
-	background-color: #4aaaa5;
-	padding: 10px;
-	display: inline-block;
-	margin-left: 75px;
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-size: 2em;
-	color: #fff;
-	width: 60%;
-	text-align: center;
-	box-sizing: border-box;
-}*/
 ul {
 	float: right;
 	list-style-type: none;
@@ -82,16 +59,6 @@ li {
 	display: inline;
 }
 /*Styling for left section*/
-
-/*.heart {
-	width: 50px;
-	height: auto;
-	float: left;
-	margin-right: 10px;
-	animation-name: heart;
-	animation-duration: 4s;
-}*/
-
 .left {
 	background-color: rgb(210,200,100);
 	float: left;
@@ -119,12 +86,6 @@ li {
 	height: auto;
 	box-shadow: 5px 5px 0 black;
 }
-/*.left img:hover {
-  box-shadow: 5px 5px 5px #666;
-  position: relative;
-  top: -2px;
-  left: -2px;
-}*/
 /*Styling for right section*/
 .right {
 	background-color: rgb(210,200,100);
@@ -151,16 +112,9 @@ li {
 	width: 50px;
 	height: auto;
 }
-/*.right img:hover {
-	position: relative;
-  	top: -2px;
- 	left: -2px;
- 	box-shadow: 5px 5px 5px #666;
-}*/
 /*Styling for footer*/
 footer {
-	/*background-color: #666;*/
-	background-image: url(../images/brick-wall.png);
+	background-image: url(../images/brickwall.png);
 	background-size: 50px 36px;
 	padding: 20px;
 	text-align: center;
@@ -169,6 +123,11 @@ footer {
 	font-size: 1em;
 	clear: both;
 	max-width: 960px;
+}
+.bottom {
+	color: yellow;
+	text-shadow: 3px 3px 0 black;
+	font-family: 'Press Start 2P', cursive;
 }
 /*Styling for About Me section*/
 .left p {
@@ -256,12 +215,14 @@ input[type=submit]:hover {
 	left: 15px;
 	color: white;
 	text-align: center;
-	background-color: #4aaaa5;
+	background-color: red;
 	padding: 5px;
 	width: 190px;
+	font-family: 'Press Start 2P', cursive;
+	font-size: .5em;
 }
 @media only screen and (max-width: 980px) {
-	/*980 styling for all pages*/
+/*980 styling for all pages*/
 	body {
 		max-width: 980px;
 	}
@@ -307,7 +268,7 @@ input[type=submit]:hover {
 		float: left;
 		margin-right: 10px;
 	}
-	/*980 styling for Contact*/
+/*980 styling for Contact*/
 	.contact {
 		width: 50%;
 		margin-right: 0;
@@ -318,7 +279,7 @@ input[type=submit]:hover {
 		border-top: 3px solid black;
 		border-bottom: 3px solid black;
 	}
-	/*980 styling for Portfolio*/
+/*980 styling for Portfolio*/
 	.portfolioBody {
 		height: 1540px;
 		background-image: url(../images/water.png);
@@ -343,13 +304,13 @@ input[type=submit]:hover {
 		color: white;
 		font-size: 1.5em;
 		text-align: center;
-		background-color: #4aaaa5;
+		background-color: red;
 		padding: 5px;
 		width: 87%;
 	}
 }
 @media only screen and (max-width: 768px) {
-	/*768 styling for all pages*/
+/*768 styling for all pages*/
 	body {
 		max-width: 768px;
 	}
@@ -361,6 +322,9 @@ input[type=submit]:hover {
 		}
 	.top {
 		width: 50%;
+	}
+	.title {
+		text-align: left;
 	}
 	header h1 {
 		float: left;
@@ -394,7 +358,7 @@ input[type=submit]:hover {
 		float: left;
 		margin-right: 10px;
 	}
-	/*768 styling for Contact*/
+/*768 styling for Contact*/
 	.contact {
 		width: 95%;
 		margin-right: 0;
@@ -405,7 +369,7 @@ input[type=submit]:hover {
 		border-top: 3px solid black;
 		border-bottom: 3px solid black;
 	}
-	/*768 styling for Portfolio*/
+/*768 styling for Portfolio*/
 	.portfolioBody {
 		height: 1170px;
 		background-image: url(../images/water.png);
@@ -430,13 +394,13 @@ input[type=submit]:hover {
 		color: white;
 		font-size: 1.5em;
 		text-align: center;
-		background-color: #4aaaa5;
+		background-color: red;
 		padding: 5px;
 		width: 87%;
 	}
 }
 @media only screen and (max-width: 640px) {
-	/*640 styling for all pages*/
+/*640 styling for all pages*/
 	body {
 		max-width: 640px;
 	}
@@ -449,6 +413,9 @@ input[type=submit]:hover {
 	.top {
 		width: 100%;
 		padding: 0;
+	}
+	.title {
+		text-align: center;
 	}
 	header h1 {
 		float: none;
@@ -484,7 +451,7 @@ input[type=submit]:hover {
 	.right h3 {
 		text-align: left;
 	}
-	/*640 styling for Contact*/
+/*640 styling for Contact*/
 	.contactBody {
 		height: 770px;
 		background-image: url(../images/water.png);
@@ -495,7 +462,7 @@ input[type=submit]:hover {
 		width: 95%;
 		margin-right: 0;
 	}
-	/*640 styling for Portfolio*/
+/*640 styling for Portfolio*/
 	.portfolioBody {
 		height: 2530px;
 		background-image: url(../images/water.png);
@@ -521,7 +488,7 @@ input[type=submit]:hover {
 		color: white;
 		font-size: 1.5em;
 		text-align: center;
-		background-color: #4aaaa5;
+		background-color: red;
 		padding: 5px;
 		width: 93.3%;
 	}
